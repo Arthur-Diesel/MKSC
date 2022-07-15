@@ -1,8 +1,6 @@
 import { DataSource } from 'typeorm';
 import { join } from 'path';
 
-console.log(process.env.DATABASE_HOST)
-
 export const databaseProviders = [
   {
     provide: 'DATA_SOURCE',
