@@ -1,4 +1,5 @@
-# MKS Backend Challenge
+# MKS Backend Challenge 🚀
+## https://mksc.herokuapp.com/api 
 ## Introdução
 A API foi escrita em TypeScript, utilizando Nest.js, TypeOrm e Swagger para a documentação, também foi utilizado um banco de dados MySQL hospedado na Azure e um servidor no Heroku utilizado para o deploy do produto.
 
