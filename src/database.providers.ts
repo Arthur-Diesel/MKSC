@@ -16,6 +16,11 @@ export const databaseProviders = [
           join(__dirname, '**', '*.entity.{ts,js}'),
         ],
         synchronize: true,
+        extra: {
+          ssl: {
+            rejectUnauthorized: false
+          }
+        }
       });
 
       return dataSource.initialize();
