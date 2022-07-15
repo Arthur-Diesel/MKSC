@@ -26,7 +26,9 @@ export class MovieController {
 
     @Put(':id')
     public async update(@Param('id') id: string, @Body() updateMovieDto: UpdateMovieDto): Promise<Movie | {error: string}> {
-        updateMovieDto.release_date = new Date(updateMovieDto.release_date)
+        if(updateMovieDto.release_date){
+            updateMovieDto.release_date = new Date(updateMovieDto.release_date)
+        }
         return await this.movieService.update(parseInt(id), updateMovieDto)
     }
 
